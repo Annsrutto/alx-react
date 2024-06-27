@@ -6,14 +6,15 @@
   "dependencies": {
     "jquery": "^3.7.1"
   },
-  "name": "0x00-webpack",
+  "name": "task_0",
   "version": "1.0.0",
-  "description": "Webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
