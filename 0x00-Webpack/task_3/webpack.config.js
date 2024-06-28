@@ -13,10 +13,11 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'public')
   },
+  devtool: 'inline-source-map',
   devServer: {
+    contentBase: './public',
     port: 8564,
   },
-  devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -38,20 +39,6 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: 'all',
-      minSize: 20000,
-      maxSize: 244000,
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
-        },
-      },
     },
   },
-  performance: {
-    hints: 'warning',
-    maxEntrypointSize: 244000,
-    maxAssetSize: 244000
-  }
 };
