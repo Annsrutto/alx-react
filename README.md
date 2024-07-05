@@ -1,1 +1,1 @@
-React Introduction.
+React Intro
