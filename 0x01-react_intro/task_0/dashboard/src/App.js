@@ -1,21 +1,19 @@
-import React from 'react'
-import logo from "./Holberton-logo.jpg";
+import logo from "./holberton-logo.jpg";
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={ logo } alt="Holberton logo" />
+    <div className="App">
+      <div className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
         <h1>School dashboard</h1>
-      </header>
-      <body className='App-body'>
+      </div>
+      <div className="App-body">
         <p>Login to access the full dashboard</p>
-      </body>
-      <footer className='App-footer'>Copyright 2020 - holberton School</footer>
+      </div>
+      <div className="App-footer">Copyright 2020 - holberton School</div>
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;

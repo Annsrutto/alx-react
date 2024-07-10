@@ -1,4 +1,4 @@
 .Notifications {
-    border: 2px dashed #e01d3f;
-    padding: 10px;
+  padding: 2em;
+  border: 2px solid red;
 }
