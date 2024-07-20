@@ -9,6 +9,6 @@ export const map = Map({
     6: 'Lucas',
 });
 
-export const map2 = list1.withMutations(function (value) {
-  value.set(2, 'Benjamin').set(4, 'Oliver');
+export const map2 = list1.withMutations((values) => {
+  values.set(2, 'Benjamin').set(4, 'Oliver');
 });
